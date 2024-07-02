@@ -1,0 +1,119 @@
+@font-face{
+    font-family: 'VCR-OSD_MONO_1.001.ttf';
+    src: url(../font/VCR_OSD_MONO_1.001.ttf);
+}
+
+@font-face {
+    font-family: 'Rocketwildness-7BB8R.ttf';
+    src: url(../fonts/Rocketwildness-7BB8R.ttf);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 2px;
+    font-family: 'VCR-OSD_MONO_1.001.ttf';
+    background-image: url(../img/warning.jpg);
+    color:rgb(251, 251, 251);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0px;
+}
+
+#s1{
+    background-image: url(../img/eyeWarning.jpg);
+    background-size:cover;
+}
+
+#s2{
+    background-image: url(../img/warning.jpg);
+    background-size:cover;
+}
+
+h1{
+    margin-top: 100px;
+    font-size: 115px;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    margin: 10px;
+    padding: 65px 0px;
+    text-align: center;
+}
+
+li a{
+    font-size: 60px;
+    justify-content: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 4;
+}
+
+#navegador ul{
+    width: 100%;
+    background-color: rgb(177, 23, 49);
+    list-style: none;
+    opacity: .5;
+}
+
+#navegador ul li{
+    display:inline-block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 10px 5px;
+    line-height: 1em;
+}
+
+#navegador ul li, a{
+    font-family: 'VCR-OSD_MONO_1.001.ttf';
+    text-decoration: none;
+    padding: 10px 40px ;
+    color:rgb(207, 100, 109);
+}
+
+#navegador ul:hover{
+    opacity: 1;
+}
+
+#navegador ul li a:hover{
+    opacity: 1;
+    color: #722234;
+}
+
+.ojos{
+    background-size: cover;
+    background: #fff fixed no-repeat 50% 50%;
+    background-position: center;
+}
+
+span{
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 10px;
+    color:#96110c;
+}
+
+footer{
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    background-color: #6e1616;
+    text-align: center;
+}

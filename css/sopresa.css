@@ -1,0 +1,97 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 2px;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    background-image: url(../img/televisorSpecial.jpg);
+    background-color: black;
+    color:rgb(255, 255, 255);
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position: center;
+    opacity: 1;
+}
+
+h2{
+    font-size: 60px;
+    margin: 60px;
+    padding: 50px 10px;
+    color: rgb(223, 20, 20);
+    font-size: 60px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h1{
+    text-shadow: -1px 0 rgb(255, 0, 0), 0 1px rgb(255, 0, 0), 1px 0 rgb(255, 0, 0), 0 -1px rgb(255, 0, 0);
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 4;
+}
+
+#navegador ul{
+    width: 100%;
+    background-color: #250902;
+    list-style: none;
+    opacity: .5;
+}
+
+#navegador ul li{
+    display:inline-block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 10px 5px;
+    line-height: 1em;
+}
+
+#navegador ul li, a{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px 40px ;
+    color: #800e13;
+}
+
+#navegador ul:hover{
+    opacity: 1;
+}
+
+#navegador ul li a:hover{
+    opacity: 1;
+    color: #ad2831;
+}
+
+#cien{
+    position:absolute;
+    align-items: center;
+    top: -2000px;
+    left: 670px;
+    animation: subirtn 8s linear infinite alternate;
+    animation-delay: 5s;
+}
+
+@keyframes subirtn{
+    from{
+        top: -2000px;
+    }
+    to{
+        top: 10px;
+    }
+}
+
+
+footer{
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    background-color: #6e1616;
+    text-align: center;
+}

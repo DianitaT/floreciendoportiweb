@@ -1,0 +1,169 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 2px;
+    font-family: 'VCR-OSD_MONO_1.001.ttf';
+    background-image: url(../img/cuartoCap3.jpg);
+    color:rgb(251, 251, 251);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 4;
+}
+
+#navegador ul{
+    width: 100%;
+    background-color: #f4acb7;
+    list-style: none;
+    opacity: .5;
+}
+
+#navegador ul li{
+    display:inline-block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 10px 5px;
+    line-height: 1em;
+}
+
+#navegador ul li, a{
+    font-family: 'VCR-OSD_MONO_1.001.ttf';
+    text-decoration: none;
+    padding: 10px 40px ;
+    color: #ffcad4;
+}
+
+#navegador ul:hover{
+    opacity: 1;
+}
+
+#navegador ul li a:hover{
+    opacity: 1;
+    color: #d8e2dc;
+}
+
+@keyframes flotar{
+    to{
+        margin-top: 15vh;
+        color:rgb(0, 17, 255);
+        font-size: 50%;
+    }
+}
+
+.particulas div{
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 80px rgba(255, 255, 255, .2);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0px;
+    animation: animarParticulas 4s linear infinite;
+}
+
+@keyframes animarParticulas{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    50%{
+        width: 20px;
+        height: 20px;
+        opacity: .5;
+        margin-left: 10px;
+    }
+    100%{
+        transform: rotate(90deg);
+        bottom: 100vh;
+    }
+}
+
+.particulas div:nth-child(1){
+    width: 100px;
+    height: 100px;
+    left: 35px;
+    animation-duration: 4s;
+    background-color: #f4acb7;
+}
+
+.particulas div:nth-child(2){
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 8s;
+    background-color: #f4acb7;
+
+}
+
+.particulas div:nth-child(3){
+    width: 40px;
+    height: 40px;
+    left: 60%;
+    animation-duration: 4s;
+    background-color: #f4acb7;
+}
+
+.particulas div:nth-child(4){
+    width: 70px;
+    height: 70px;
+    left: 35px;
+    animation-duration: 8s;
+    background-color: #f4acb7;
+}
+
+.particulas div:nth-child(5){
+    width: 50px;
+    height: 50px;
+    left: 45%;
+    animation-duration: 4s;
+    background-color: #f4acb7;
+}
+
+
+.particulas div:nth-child(6){
+    width: 80px;
+    height: 80px;
+    left: 69%;
+    animation-duration: 8s;
+    background-color: #f4acb7;
+}
+
+.particulas div:nth-child(7){
+    width: 80px;
+    height: 80px;
+    right: 69%;
+    animation-duration: 8s;
+    background-color: #f4acb7;
+}
+
+.particulas div:nth-child(8){
+    width: 80px;
+    height: 80px;
+    right: 69%;
+    animation-duration: 8s;
+    background-color: #f4acb7;
+}
+
+#asustada{
+    position: absolute;
+    align-items: center;
+    top: 580px;
+    left: 570px;
+}
+
+footer{
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    background-color: #c77a91;
+    text-align: center;
+}

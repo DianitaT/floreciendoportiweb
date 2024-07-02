@@ -1,0 +1,106 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 2px;
+    font-family: 'VCR-OSD_MONO_1.001.ttf';
+    background-image: url(../img/FondoCap2.jpg);
+    color:rgb(251, 251, 251);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 4;
+}
+
+#navegador ul{
+    width: 100%;
+    background-color: #03045e;
+    list-style: none;
+    opacity: .5;
+}
+
+#navegador ul li{
+    display:inline-block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 10px 5px;
+    line-height: 1em;
+}
+
+#navegador ul li, a{
+    font-family: 'VCR-OSD_MONO_1.001.ttf';
+    text-decoration: none;
+    padding: 10px 40px ;
+    color: #0077b6;
+}
+
+#navegador ul:hover{
+    opacity: 1;
+}
+
+#navegador ul li a:hover{
+    opacity: 1;
+    color: #fffaff;
+}
+
+#derecha{
+    position: absolute;
+    width:30%;
+    right: 600px;
+    height: 50%;
+    animation: moverd 5s 12 alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes moverd{
+    0%{
+        right: 0px;
+    }
+    50%{
+        right: 400px;
+        opacity: .1;
+    
+    }
+    100%{
+        right: 0px;
+    }
+}
+
+#luz{
+    position: absolute;
+    right: 400px;
+    width: 30%;
+    height: 50%;
+    animation: moveri 5s 12 alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes moveri{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 700px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+
+footer{
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    background-color: #90e0ef;
+    text-align: center;
+}
